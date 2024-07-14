@@ -1,0 +1,136 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url('/images/home-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .heroContent {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.storyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.story,
+.blog {
+  position: relative;
+  flex: 1 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.story::before,
+.blog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.story .overlay,
+.blog .overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.story {
+  background-image: url('/images/home-banner.jpg');
+}
+
+.blog {
+  background-image: url('/images/home-banner.jpg');
+}
+
+.story,
+.blog {
+  .overlay {
+    h2 {
+      font-size: 5rem;
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+
+      &:hover {
+        color: #f1c40f;
+      }
+    }
+  }
+}
+
+.fullContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featuredProducts {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  background-color: #e5e7eb;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e5e7eb;
+  padding: 3rem;
+}
+
+.service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4b5563;
+  }
+}
