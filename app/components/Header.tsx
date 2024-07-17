@@ -48,10 +48,10 @@ export default function Header() {
           <p className='font-bold text-inherit'>HUM Clothing</p>
         </NavbarBrand>
         <NavbarItem isActive>
-          <Link href='#'>Home</Link>
+          <Link href='/'>Home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href='#' color='foreground' aria-current='page'>
+          <Link href='/shirts' color='foreground' aria-current='page'>
             Store
           </Link>
         </NavbarItem>
